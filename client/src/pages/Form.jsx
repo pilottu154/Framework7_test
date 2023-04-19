@@ -21,7 +21,7 @@ const FormPage = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("/users", formData);
+      const response = await axios.post('http://localhost:3000/users', formData);
       console.log(response.data);
     } catch (error) {
       console.error(error);

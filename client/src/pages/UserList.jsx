@@ -19,8 +19,8 @@ const UserList = () => {
     <>
       <BlockTitle>Информация</BlockTitle>
       { users.map((user) => (
-        <List key={user.id} dividersIos simpleList strong outline>
-          <ListItem title="ФИО:" value={user.user_name} />
+        <List key={user.id} mediaList>
+          <ListItem title="ФИО:" subtitle={user.user_name} />
           <ListItem title="Номер телефона:" value={user.phone_number} />
           <ListItem title="Номер автомобиля:" value={user.car_number} />
         </List>
